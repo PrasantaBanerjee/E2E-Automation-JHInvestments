@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="org.jhi.listeners.TestListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="org.jhi.main.Base">
+        <methods>
+          <include name="TC2_Validate_HomepageTitle"/>
+          <include name="endBrowser"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- org.jhi.main.Base -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
