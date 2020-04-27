@@ -1,16 +1,16 @@
                     ________________________________________
                   _/_                                      _\_
                __/__/          End to End Automation       \__\__
-              | « « |             JH Investments            | » » |
-               ¯¯\¯¯\      Selenium WebDriver w/Java        /¯¯/¯¯
-                  ¯\¯                                      ¯/¯
-                    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+              | Â« Â« |             JH Investments            | Â» Â» |
+               Â¯Â¯\Â¯Â¯\      Selenium WebDriver w/Java        /Â¯Â¯/Â¯Â¯
+                  Â¯\Â¯                                      Â¯/Â¯
+                    Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯Â¯
 This repository serves as a codebase for the Automation script developed for JH Investments (Boston-based Asset Management company).
 This is a reusable automation framework that blends together Selenium WebDriver, Java & TestNG.
 
 The framework incorporates design principles of POM (Page Object Model) which promotes designing a class for each page
-of the application, which then serves as an object repository & ultimately helps to avoid code duplication & improves code
-maintainability & readability.
+of the application. The primary advantage to using Page Objects is that when a component changes in the underlying application, 
+it only needs to be changed in the Page object instead of each test. Each page object class serves as an object repository & ultimately helps to avoid code duplication & improves code maintainability & readability.
 
 Tools & Libraries:
 ====================
