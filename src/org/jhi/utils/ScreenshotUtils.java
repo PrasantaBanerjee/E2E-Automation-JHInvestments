@@ -22,7 +22,7 @@ public class ScreenshotUtils extends Base{
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		String timestamp = new SimpleDateFormat("EEE MM-dd-yyyy hh-mm-ss a").format(new Date());
 		File source=ts.getScreenshotAs(OutputType.FILE);
-		String destination="./Screenshots/Test Execution_"+static_tmsp + "/"+ screenshotname + " " + timestamp +".png";
+		String destination="./screenshots/Test Execution_"+static_tmsp + "/"+ screenshotname + " " + timestamp +".png";
 		File target=new File(destination);
 		try {
 			FileUtils.copyFile(source, target);

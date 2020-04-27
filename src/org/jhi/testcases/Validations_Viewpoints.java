@@ -20,7 +20,7 @@ public class Validations_Viewpoints extends Base{
 
 	ViewpointsPage viewpoints_page = new ViewpointsPage(getDriver());
 
-	public void clickAndVerifyViewpointLinks() {
+	public void navigateToViewpoints() {
 		WebElement link = viewpoints_page.viewpointTab();
 		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
 		wait.until(ExpectedConditions.elementToBeClickable(link));
@@ -29,7 +29,11 @@ public class Validations_Viewpoints extends Base{
 		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		System.out.println("Clicked on Viewpoints tab.");
 		System.out.println();
-
+	}
+	
+	public void clickAndVerifyViewpointLinks() {
+		navigateToViewpoints();
+		
 		List<WebElement> availableViewpoints = viewpoints_page.allViewpointLinks();
 		System.out.println("All the available Viewpoints in the page: ");
 		int count=1;
@@ -46,7 +50,7 @@ public class Validations_Viewpoints extends Base{
 			List<String>allWindows = new ArrayList<>(getDriver().getWindowHandles());
 			getDriver().switchTo().window(allWindows.get(1));
 			System.out.println("Switched to: " + getDriver().getTitle());
-			System.out.println("URL: " + getDriver().getCurrentUrl());
+			System.out.println("Current URL: " + getDriver().getCurrentUrl());
 			getDriver().close();
 			System.out.println("Closed the tab.");
 			getDriver().switchTo().window(allWindows.get(0));

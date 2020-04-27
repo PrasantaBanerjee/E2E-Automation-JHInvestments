@@ -23,7 +23,7 @@ public class HomePage extends Base {
 	}
 	
 	@FindBy(xpath= "//div[@class='primary-nav-item u-flex-sm']//div")
-	List<WebElement> allMenuOptions;
+	private List<WebElement> allMenuOptions;
 
 	public List<WebElement> getHomepageNavigMenu() {
 		WebDriverWait wait = new WebDriverWait(getDriver(), 30);

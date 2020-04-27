@@ -16,12 +16,10 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.testng.log4testng.Logger;
 
 /*
  * @author: Prasanta.
- * @desc:   This class will be the Runner class, which should be extended by other classes to using the WebDriver instance.
- * @params: NA.
+ * @desc:   This class should be extended by other classes to use the WebDriver instance.
  * 
  */
 
@@ -30,7 +28,7 @@ public class Base {
 	static PropertyFileReader config = new PropertyFileReader();
 	static String browserName = config.getProperty("browsername");
 	static String headless = config.getProperty("headless");
-	static String appUrl = "https://" + config.getProperty("base.url");
+	static String appUrl = "https://" + config.getProperty("prod.url");
 	static Validations_Homepage homepage = new Validations_Homepage();
 	static Validations_Viewpoints viewpoints = new Validations_Viewpoints();
 	static Validations_AboutUs aboutus = new Validations_AboutUs();
@@ -116,55 +114,52 @@ public class Base {
 		System.out.println("Launched " + browserName + " browser.");
 	}
 
-	//This method will close WebDriver instance.
+	//This method will close the WebDriver instance.
 	public static void closeBrowser() {
 		if(driver!=null) {
 			driver.quit();
 		}
 	}
 
-	//This method will be executed only 1x (before @Test).
-	@BeforeTest
-	public static void launchBrowser() {
+	@BeforeTest(alwaysRun=true)
+	public static void launchApplication() {
 		try {
-			getDriver().get(appUrl);	
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			getDriver().get(appUrl);
+			getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		} catch (TimeoutException e) {
 			System.out.println("Timeout Exception occured: " + e.getMessage());
 		} catch (Exception e) {
 			System.out.println("Unknown Exception occured: " + e.getMessage());
-		} 
+		}
 	}
 
-	//This method will be executed only 1x (after @Test).
-	@AfterTest
+	@AfterTest(alwaysRun=true)
 	public void endBrowser() {
 		closeBrowser();
 	}
 
-	@Test(priority=1)
+	@Test(groups= {"smoke", "regression"})
 	public void TC1_Validate_HomepageUrl() {
 		homepage.TC1_validateHomepageUrl();
 	}
 
-	@Test(priority=2)
+	@Test(groups = {"smoke", "regression"})
 	public void TC2_Validate_HomepageTitle() {
 		homepage.TC2_validateHomepageTitle();
 	}
 
-	@Test(priority=3)
+	@Test(groups = {"sanity", "regression"})
 	public void TC3_Validate_NavigationMenuOptions() {
 		homepage.TC3_validateNavigationMenuOptions();
 	}
 	
-	@Test(priority=4)
+	@Test(groups = {"sanity", "regression"})
 	public void TC4_Validate_ViewpointTitles() {
 		viewpoints.clickAndVerifyViewpointLinks();
 	}
 	
-	@Test(priority=5)
+	@Test(groups = {"sanity", "regression"})
 	public void TC5_Validate_SocialMediaLinks() {
 		aboutus.validateSocialMediaLinks();
 	}
-
 }

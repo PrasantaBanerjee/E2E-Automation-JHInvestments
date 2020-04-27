@@ -1,25 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9536" started-at="2020-04-24T13:42:18Z" finished-at="2020-04-24T13:42:28Z">
+  <suite name="JHInvestments Regression Suite" duration-ms="126011" started-at="2020-04-26T02:12:11Z" finished-at="2020-04-26T02:14:17Z">
     <groups>
+      <group name="regression">
+        <method signature="Base.TC1_Validate_HomepageUrl()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC1_Validate_HomepageUrl" class="org.jhi.main.Base"/>
+        <method signature="Base.TC2_Validate_HomepageTitle()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC2_Validate_HomepageTitle" class="org.jhi.main.Base"/>
+        <method signature="Base.TC3_Validate_NavigationMenuOptions()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC3_Validate_NavigationMenuOptions" class="org.jhi.main.Base"/>
+        <method signature="Base.TC4_Validate_ViewpointTitles()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC4_Validate_ViewpointTitles" class="org.jhi.main.Base"/>
+        <method signature="Base.TC5_Validate_SocialMediaLinks()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC5_Validate_SocialMediaLinks" class="org.jhi.main.Base"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Base.TC1_Validate_HomepageUrl()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC1_Validate_HomepageUrl" class="org.jhi.main.Base"/>
+        <method signature="Base.TC2_Validate_HomepageTitle()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC2_Validate_HomepageTitle" class="org.jhi.main.Base"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Base.TC3_Validate_NavigationMenuOptions()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC3_Validate_NavigationMenuOptions" class="org.jhi.main.Base"/>
+        <method signature="Base.TC4_Validate_ViewpointTitles()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC4_Validate_ViewpointTitles" class="org.jhi.main.Base"/>
+        <method signature="Base.TC5_Validate_SocialMediaLinks()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC5_Validate_SocialMediaLinks" class="org.jhi.main.Base"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="9536" started-at="2020-04-24T13:42:18Z" finished-at="2020-04-24T13:42:28Z">
+    <test name="JHInvestments Regression Suite Test Scenario Validations" duration-ms="126011" started-at="2020-04-26T02:12:11Z" finished-at="2020-04-26T02:14:17Z">
       <class name="org.jhi.main.Base">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:org.jhi.main.Base@70e9c95d]" name="launchBrowser" is-config="true" duration-ms="7687" started-at="2020-04-24T19:12:18Z" finished-at="2020-04-24T19:12:26Z">
+        <test-method status="PASS" signature="launchApplication()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="launchApplication" is-config="true" duration-ms="17144" started-at="2020-04-26T07:42:11Z" finished-at="2020-04-26T07:42:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="TC1_Validate_HomepageUrl()[pri:0, instance:org.jhi.main.Base@70e9c95d]" name="TC1_Validate_HomepageUrl" duration-ms="95" started-at="2020-04-24T19:12:26Z" finished-at="2020-04-24T19:12:26Z">
+        </test-method> <!-- launchApplication -->
+        <test-method status="PASS" signature="TC1_Validate_HomepageUrl()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC1_Validate_HomepageUrl" duration-ms="25" started-at="2020-04-26T07:42:28Z" finished-at="2020-04-26T07:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC1_Validate_HomepageUrl -->
-        <test-method status="PASS" signature="endBrowser()[pri:0, instance:org.jhi.main.Base@70e9c95d]" name="endBrowser" is-config="true" duration-ms="1600" started-at="2020-04-24T19:12:26Z" finished-at="2020-04-24T19:12:28Z">
+        <test-method status="PASS" signature="TC2_Validate_HomepageTitle()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC2_Validate_HomepageTitle" duration-ms="15" started-at="2020-04-26T07:42:57Z" finished-at="2020-04-26T07:42:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC2_Validate_HomepageTitle -->
+        <test-method status="PASS" signature="TC3_Validate_NavigationMenuOptions()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC3_Validate_NavigationMenuOptions" duration-ms="2582" started-at="2020-04-26T07:42:58Z" finished-at="2020-04-26T07:43:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC3_Validate_NavigationMenuOptions -->
+        <test-method status="PASS" signature="TC4_Validate_ViewpointTitles()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC4_Validate_ViewpointTitles" duration-ms="49079" started-at="2020-04-26T07:43:02Z" finished-at="2020-04-26T07:43:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC4_Validate_ViewpointTitles -->
+        <test-method status="PASS" signature="TC5_Validate_SocialMediaLinks()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="TC5_Validate_SocialMediaLinks" duration-ms="22846" started-at="2020-04-26T07:43:51Z" finished-at="2020-04-26T07:44:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC5_Validate_SocialMediaLinks -->
+        <test-method status="PASS" signature="endBrowser()[pri:0, instance:org.jhi.main.Base@7b36aa0c]" name="endBrowser" is-config="true" duration-ms="2609" started-at="2020-04-26T07:44:15Z" finished-at="2020-04-26T07:44:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endBrowser -->
       </class> <!-- org.jhi.main.Base -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- JHInvestments Regression Suite Test Scenario Validations -->
+  </suite> <!-- JHInvestments Regression Suite -->
 </testng-results>

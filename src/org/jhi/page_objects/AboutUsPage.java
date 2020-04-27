@@ -35,6 +35,5 @@ public class AboutUsPage extends Base{
 	
 	public WebElement aboutUsTab() {
 		return aboutUsTab;
-	}
-	
+	}	
 }

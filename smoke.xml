@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="JHInvestments Smoke Suite">
+	<!-- Listener classes -->
+	<listeners>
+		<listener class-name="org.jhi.listeners.TestListener" />
+		<listener class-name="org.jhi.listeners.AnnotationTransformer" />
+	</listeners>
+
+	<test name="JHInvestments Smoke Suite Test Scenario Validations">
+		<!-- Groups -->
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+
+		<!-- Test classes -->
+		<classes>
+			<class name="org.jhi.main.Base" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

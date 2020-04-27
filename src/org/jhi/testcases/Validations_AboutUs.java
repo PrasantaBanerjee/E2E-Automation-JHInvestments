@@ -21,7 +21,7 @@ public class Validations_AboutUs extends Base {
 
 	AboutUsPage aboutus_page = new AboutUsPage(getDriver());
 
-	public void validateSocialMediaLinks() {
+	public void navigateToAboutUs() {
 		WebElement link = aboutus_page.aboutUsTab();
 		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
 		wait.until(ExpectedConditions.elementToBeClickable(link));
@@ -30,6 +30,10 @@ public class Validations_AboutUs extends Base {
 		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		System.out.println("Clicked on About Us tab.");
 		System.out.println();
+	}
+	
+	public void validateSocialMediaLinks() {
+		navigateToAboutUs();
 		
 		List<WebElement> allLinks = aboutus_page.socialLinks();
 		for (WebElement eachLink : allLinks) {
