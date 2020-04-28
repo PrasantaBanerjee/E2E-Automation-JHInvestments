@@ -1,11 +1,11 @@
-                    ____________________________________________
-                  _/_                                           _\_
-               __/__/            End to End Automation          \__\__
-              | « « |          JH Investments Application       | » » |
-               ¯¯\¯¯\          Selenium WebDriver w/Java        /¯¯/¯¯
-                  ¯\¯                                           ¯/¯
-                    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-This repository serves as a codebase for the Automation script developed for JH Investments (Boston-based Asset Management company).
+                     __________________________________________________________________
+                  _/_                                                                  _\_
+               __/__/                      End to End UI Automation                    \__\__
+              | « « |          John Hancock Investments Management Application         | » » |
+               ¯¯\¯¯\                  Selenium WebDriver w/Java & TestNG              /¯¯/¯¯
+                  ¯\¯                                                                  ¯/¯
+                    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+This repository serves as a codebase for the Automation script developed for John Hancock Investments Management (Boston-based Asset Management company).
 This is a reusable automation framework that blends together Selenium WebDriver, Java & TestNG.
 
 The framework incorporates design principles of POM (Page Object Model) which promotes designing a separate class for every single WebPage of the application. The primary advantage to using Page Objects is that when a component changes in the underlying application, 
