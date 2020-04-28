@@ -15,28 +15,28 @@ it only needs to be changed in the Page object instead of each test. Each page o
 Project Skeleton:
 ===================
 ```
-    org
-    └── jhi
-		├── listeners
-		│   ├── AnnotationTransformer.java
-		│   ├── RetryListener.java
-		│   └── TestListener.java
-		└── main
-		│   └── Base.java
-		└── page_objects
-		│   ├── AboutUsPage.java
-		│   ├── HomePage.java
-		│   └── ViewpointsPage.java
-		└── resources
-		│   └── properties
-		│	    └── config.properties
-		└── testcases
-		│   ├── Validations_AboutUs.java
-		│   ├── Validations_Homepage.java
-		│   └── Validations_Viewpoints.java
-		└── utils
-		    ├── PropertyFileReader.java
-		    └── ScreenshotUtils.java
+   org
+     └── jhi
+	  ├── listeners
+	  │   ├── AnnotationTransformer.java
+	  │   ├── RetryListener.java
+	  │   └── TestListener.java
+	  └── main
+	  │   └── Base.java
+	  └── page_objects
+	  │   ├── AboutUsPage.java
+	  │   ├── HomePage.java
+	  │   └── ViewpointsPage.java
+	  └── resources
+	  │   └── properties
+	  │	    └── config.properties
+	  └── testcases
+	  │   ├── Validations_AboutUs.java
+	  │   ├── Validations_Homepage.java
+	  │   └── Validations_Viewpoints.java
+	  └── utils
+	  	├── PropertyFileReader.java
+		└── ScreenshotUtils.java
 ```
 Tools & Libraries:
 ====================
