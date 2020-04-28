@@ -1,8 +1,8 @@
                     ____________________________________________
                   _/_                                           _\_
-               __/__/           End to End Automation           \__\__
-              | « « |         JH Investments Application        | » » |
-               ¯¯\¯¯\         Selenium WebDriver w/Java         /¯¯/¯¯
+               __/__/            End to End Automation          \__\__
+              | « « |          JH Investments Application       | » » |
+               ¯¯\¯¯\          Selenium WebDriver w/Java        /¯¯/¯¯
                   ¯\¯                                           ¯/¯
                     ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 This repository serves as a codebase for the Automation script developed for JH Investments (Boston-based Asset Management company).
