@@ -12,6 +12,32 @@ The framework incorporates design principles of POM (Page Object Model) which pr
 of the application. The primary advantage to using Page Objects is that when a component changes in the underlying application, 
 it only needs to be changed in the Page object instead of each test. Each page object class serves as an object repository & ultimately helps to avoid code duplication & improves code maintainability & readability.
 
+Project Skeleton:
+===================
+```
+    org
+    └── jhi
+		├── listeners
+		│   ├── AnnotationTransformer.java
+		│   ├── RetryListener.java
+		│   └── TestListener.java
+		└── main
+		│   └── Base.java
+		└── page_objects
+		│   ├── AboutUsPage.java
+		│   ├── HomePage.java
+		│   └── ViewpointsPage.java
+		└── resources
+		│   └── properties
+		│	    └── config.properties
+		└── testcases
+		│   ├── Validations_AboutUs.java
+		│   ├── Validations_Homepage.java
+		│   └── Validations_Viewpoints.java
+		└── utils
+		    ├── PropertyFileReader.java
+		    └── ScreenshotUtils.java
+```
 Tools & Libraries:
 ====================
 The test automation framework is comprised of the following tools & libraries:
