@@ -8,8 +8,7 @@
 This repository serves as a codebase for the Automation script developed for JH Investments (Boston-based Asset Management company).
 This is a reusable automation framework that blends together Selenium WebDriver, Java & TestNG.
 
-The framework incorporates design principles of POM (Page Object Model) which promotes designing a class for each page
-of the application. The primary advantage to using Page Objects is that when a component changes in the underlying application, 
+The framework incorporates design principles of POM (Page Object Model) which promotes designing a separate class for every single WebPage of the application. The primary advantage to using Page Objects is that when a component changes in the underlying application, 
 it only needs to be changed in the Page object instead of each test. Each page object class serves as an object repository & ultimately helps to avoid code duplication & improves code maintainability & readability.
 
 Project Skeleton:
